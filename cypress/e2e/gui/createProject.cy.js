@@ -2,6 +2,8 @@ import { faker } from '@faker-js/faker'     ///Gerar dados aletorios ///
 
 describe('Create Project', () => {
   beforeEach(() => {
+    cy.api_deleteProjects()
+    
     cy.login()
   })
 
